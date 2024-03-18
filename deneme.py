@@ -12,7 +12,7 @@ def listToString(s):
     str1 = " " 
   
     return (str1.join(s))
-
+#asfasfasf
 service = Service(executable_path='C:\\Users\\MONSTER\\Desktop\\geckodriver.exe')
 firefox_options = webdriver.FirefoxOptions()
 driver = webdriver.Firefox(service=service, options=firefox_options)
