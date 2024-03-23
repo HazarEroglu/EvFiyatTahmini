@@ -23,10 +23,10 @@ driver.get(URL)
 driver.maximize_window()
 
 counter = 1
-while counter<3:
+while counter<10:
     # driver.execute_script("window.scrollBy(0,400)","")
     element = WebDriverWait(driver, 20).until(
-        EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/div[3]/div[1]/div/div[7]/div[1]/div["+str(counter)+"]"))
+        EC.element_to_be_clickable((By.XPATH, f"//div[@data-index='{counter}']"))
     )
     element.click()
 

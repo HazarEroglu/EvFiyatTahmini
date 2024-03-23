@@ -36,8 +36,6 @@ while counter < 20:
             counter = 22
         if (counter == 14):
             counter = 15    
-        print(counter)
-        print("\n")
     except Exception as e:
         driver.execute_script("window.scrollBy(0,100)","")
 
