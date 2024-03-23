@@ -1,3 +1,5 @@
+
+# -- coding: utf-8 --
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
@@ -8,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from urllib.parse import urlparse, parse_qs
 
-service = Service(executable_path='C:\\Users\\MONSTER\\Desktop\\geckodriver.exe')
+service = Service(executable_path='C:\\Users\\Hazar\\Desktop\\evfiyattahminproje\\geckodriver.exe')
 firefox_options = webdriver.FirefoxOptions()
 driver = webdriver.Firefox(service=service, options=firefox_options)
 firefox_options.add_argument("--headless")
