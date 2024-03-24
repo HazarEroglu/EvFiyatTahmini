@@ -14,7 +14,7 @@ def listToString(s):
   
     return (str1.join(s))
 
-service = Service(executable_path='C:\\Users\\MONSTER\\Desktop\\geckodriver.exe')
+service = Service(executable_path='C:\\Users\\Hazar\\Desktop\\evfiyattahminproje\\geckodriver.exe')
 firefox_options = webdriver.FirefoxOptions()
 driver = webdriver.Firefox(service=service, options=firefox_options)
 firefox_options.add_argument("--headless")
@@ -24,7 +24,7 @@ driver.get(URL)
 driver.maximize_window()
 
 counter = 1
-while counter<35:
+while counter<7:
     try:
         element = WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable((By.XPATH, f"//div[@data-index='{counter}']"))
